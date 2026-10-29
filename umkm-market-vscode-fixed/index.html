@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UMKM Market - toko online produk lokal.">
+  <title>UMKM Market — Produk Lokal Pilihan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="announcement">Dukung produk lokal Indonesia <span>•</span> Belanja mudah, langsung dari UMKM</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="UMKM Market beranda"><span class="brand-mark">u.</span><span>umkm<span
+          class="brand-light">market</span></span></a>
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <a href="#home" class="nav-link active">Beranda</a><a href="#produk" class="nav-link">Produk</a><a href="#pesanan"
+        class="nav-link">Pesanan Saya</a><a href="#admin" class="nav-link">Admin Demo</a>
+    </nav>
+    <div class="header-actions"><button class="icon-button" id="search-focus" aria-label="Cari produk"
+        title="Cari produk">⌕</button><button class="cart-button" id="open-cart">Keranjang <span
+          id="cart-count">0</span></button><button class="mobile-menu" id="mobile-menu"
+        aria-label="Buka menu">☰</button></div>
+  </header>
+  <main>
+    <section class="hero page-section" id="home">
+      <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> PILIHAN LOKAL, RASA ISTIMEWA</span>
+        <h1>Produk lokal,<br><span>cerita yang hebat.</span></h1>
+        <p>Temukan camilan dan minuman pilihan dari usaha lokal. Dibuat dengan perhatian, dikirim untuk menemani harimu.
+        </p>
+        <div class="hero-actions"><a class="button button-dark" href="#produk">Jelajahi Produk <span>↗</span></a><span
+            class="hero-note"><span class="tiny-check">✓</span> Mendukung UMKM lokal</span></div>
+        <div class="hero-stats">
+          <div><strong>100%</strong><span>Produk lokal</span></div>
+          <div><strong>Fresh</strong><span>Pilihan berkualitas</span></div>
+          <div><strong>Simple</strong><span>Belanja praktis</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image-frame"><img
+            src="https://images.unsplash.com/photo-1621939514649-280e2aa2f2a7?auto=format&fit=crop&w=1000&q=85"
+            alt="Aneka camilan dan produk makanan" onerror="this.style.display='none'">
+          <div class="hero-image-overlay"></div>
+          <div class="floating-label"><span class="floating-icon">✳</span><span><b>Dibuat lokal</b><small>Penuh rasa,
+                penuh cerita</small></span></div>
+          <div class="hero-number">01 <span>/ PRODUK PILIHAN</span></div>
+        </div>
+        <div class="hero-orbit"></div>
+      </div>
+    </section>
+    <section class="benefit-strip" aria-label="Keunggulan toko">
+      <div><span class="benefit-icon">✳</span><span><b>Produk pilihan</b><small>Dari UMKM lokal</small></span></div>
+      <div><span class="benefit-icon">♡</span><span><b>Dibuat dengan cinta</b><small>Kualitas diutamakan</small></span>
+      </div>
+      <div><span class="benefit-icon">↗</span><span><b>Belanja praktis</b><small>Proses sederhana</small></span></div>
+    </section>
+    <section class="products-section page-section" id="produk">
+      <div class="section-heading">
+        <div><span class="eyebrow">KATALOG KAMI</span>
+          <h2>Temukan favoritmu<span class="heading-period">.</span></h2>
+          <p>Pilihan sederhana untuk menemani hari yang istimewa.</p>
+        </div><a class="text-link" href="#produk">Lihat semua produk <span>↗</span></a>
+      </div>
+      <div class="catalog-tools"><label class="search-box"><span>⌕</span><input id="product-search" type="search"
+            placeholder="Cari keripik, kopi, dan lainnya..." aria-label="Cari produk"></label>
+        <div class="filter-buttons" aria-label="Filter produk"><button class="filter-chip selected"
+            data-filter="Semua">Semua</button><button class="filter-chip" data-filter="Camilan">Camilan</button><button
+            class="filter-chip" data-filter="Minuman">Minuman</button><button class="filter-chip"
+            data-filter="Sambal">Sambal</button></div>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+    <section class="story-banner">
+      <div class="story-symbol">u.</div>
+      <div><span class="eyebrow">DARI KAMI UNTUK KAMU</span>
+        <h2>Setiap produk punya<br>cerita lokalnya sendiri.</h2>
+        <p>Dengan memilih produk UMKM, kamu ikut mendukung karya dan usaha masyarakat.</p>
+      </div><a href="#produk" class="button button-light">Pilih produk <span>↗</span></a>
+    </section>
+    <section class="orders-section page-section" id="pesanan">
+      <div class="section-heading">
+        <div><span class="eyebrow">RIWAYAT TRANSAKSI</span>
+          <h2>Pesanan saya<span class="heading-period">.</span></h2>
+          <p>Lihat pesanan yang dibuat pada perangkat ini.</p>
+        </div>
+      </div>
+      <div id="orders-list" class="orders-list"></div>
+    </section>
+    <section class="admin-section page-section" id="admin">
+      <div class="admin-heading">
+        <div><span class="eyebrow">AREA DEMO</span>
+          <h2>Panel admin</h2>
+          <p>Simulasi pengelolaan produk, pesanan, dan verifikasi pembayaran untuk demonstrasi front-end.</p>
+        </div><span class="demo-badge">DEMO FRONT-END</span>
+      </div>
+      <div class="admin-login" id="admin-login"><label>Username admin<input id="admin-username" type="text"
+            placeholder="Masukkan username" autocomplete="username"></label><label>Password admin<input
+            id="admin-password" type="password" placeholder="Masukkan password"
+            autocomplete="current-password"></label><button class="button button-dark" id="admin-login-btn">Masuk ke
+          panel</button><small>Demo lokal: username <b>admin</b> dan password <b>umkm123</b>.</small></div>
+      <div id="admin-panel" class="admin-panel hidden">
+        <div class="admin-topline">
+          <h3>Ringkasan toko</h3><button class="button button-outline button-small" id="admin-logout">Keluar</button>
+        </div>
+        <div class="admin-stats" id="admin-stats"></div>
+        <h3>Kelola pesanan</h3>
+        <div id="admin-orders"></div>
+        <h3>Tambah produk demo</h3>
+        <form id="add-product-form" class="add-product-form"><label>Nama produk<input name="name" required
+              maxlength="60" placeholder="Contoh: Kue bagea"></label><label>Kategori<select name="category">
+              <option>Camilan</option>
+              <option>Minuman</option>
+              <option>Sambal</option>
+            </select></label><label>Harga (Rp)<input name="price" type="number" required min="1"
+              placeholder="25000"></label><label>Stok<input name="stock" type="number" required min="0"
+              placeholder="20"></label><label class="wide-field">Deskripsi<input name="description" required
+              maxlength="120" placeholder="Deskripsi singkat produk"></label><button class="button button-dark"
+            type="submit">+ Tambah produk</button></form>
+        <p class="admin-notice">Perubahan hanya tersimpan di browser ini. Belum ada database atau pembayaran sungguhan.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span
+        class="brand-mark">u.</span><span>umkm<span class="brand-light">market</span></span></a>
+    <p>Merayakan produk lokal, satu pesanan dalam satu waktu.</p>
+    <div class="footer-bottom"><span>© 2026 UMKM Market — Proyek pembelajaran E-Business System</span><a
+        href="#home">Kembali ke atas ↑</a></div>
+  </footer>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Keranjang belanja" aria-hidden="true">
+    <div class="drawer-heading">
+      <div><span class="eyebrow">BELANJA KAMU</span>
+        <h2>Keranjang</h2>
+      </div><button class="close-button" id="close-cart" aria-label="Tutup keranjang">×</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="cart-subtotal">Rp0</strong></div><small>Biaya pengiriman belum dihitung
+        dalam demo ini.</small><button class="button button-dark full-button" id="go-checkout">Lanjut checkout
+        <span>→</span></button>
+    </div>
+  </aside>
+  <div class="modal-backdrop hidden" id="checkout-modal">
+    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <div class="modal-heading">
+        <div><span class="eyebrow">SATU LANGKAH LAGI</span>
+          <h2 id="checkout-title">Checkout</h2>
+        </div><button class="close-button" id="close-checkout" aria-label="Tutup checkout">×</button>
+      </div>
+      <div class="checkout-layout">
+        <form id="checkout-form" class="checkout-form"><label>Nama lengkap <span>*</span><input name="name" required
+              autocomplete="name" placeholder="Nama penerima"></label><label>Email <span>*</span><input name="email"
+              type="email" required autocomplete="email" placeholder="nama@email.com"></label><label>Nomor telepon
+            <span>*</span><input name="phone" type="tel" required minlength="8" autocomplete="tel"
+              placeholder="08xxxxxxxxxx"></label><label>Alamat pengiriman <span>*</span><textarea name="address"
+              required rows="3" placeholder="Nama jalan, nomor rumah, kelurahan..."></textarea></label><label>Metode
+            pembayaran <span>*</span><select name="payment" required>
+              <option value="">Pilih metode pembayaran</option>
+              <option>Transfer Bank</option>
+              <option>E-Wallet</option>
+              <option>COD</option>
+            </select></label>
+          <p class="form-note">* Wajib diisi. Pembayaran pada website ini hanya simulasi.</p><button type="submit"
+            class="button button-dark full-button">Buat pesanan <span>→</span></button>
+        </form>
+        <div class="checkout-summary">
+          <h3>Ringkasan pesanan</h3>
+          <div id="checkout-items"></div>
+          <div class="summary-total"><span>Total</span><strong id="checkout-total">Rp0</strong></div>
+          <p>Pesanan baru akan berstatus <b>PENDING</b> sampai pembayaran disimulasikan diverifikasi oleh admin.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
